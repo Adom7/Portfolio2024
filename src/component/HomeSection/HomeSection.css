@@ -1,0 +1,70 @@
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3139FB;
+    font-family: var(--fonts-softSans);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.home-section h1{
+    color: #FFFCEC;
+    text-align: center;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 0.975em;
+    letter-spacing: -0.05em;
+    max-width: 90vw;
+    margin-bottom: 0;
+}
+
+.home-section h2{
+    color : #ff8a90;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 0.975em;
+    letter-spacing: -0.05em;
+    max-width: 90vw;
+}
+
+.noise {
+    background-image: url(../../media/noise-light.png);
+    background-size :auto;
+}
+.zigzag-border {
+    background: #ffffff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.zigzag-border::before {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), 
+                linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 22px 32px;
+    content: '';
+    display: block;
+    height: 32px;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+}
+
+.zigzag-border::after {
+    background: linear-gradient(45deg, #ffffff 16px, transparent 0), 
+                linear-gradient(-45deg, #ffffff 16px, transparent 0);
+    background-repeat: repeat-x;
+    background-position: right-bottom;
+    background-size: 22px 32px;
+    content: '';
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
