@@ -1,40 +1,123 @@
 
+.home-section-master{
+    height: 100vh;
+
+}
+
 .home-section {
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: #3139FB;
     font-family: var(--fonts-softSans);
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    overflow: hidden;
 }
 
-.home-section h1{
-    color: #FFFCEC;
+.home-content {
+    padding : 4.5rem 0 0 0;
+    max-width: 50%;
+}
+
+@media (max-width: 600px) {
+    .home-title {
+        font-size: 2rem !important; /* Taille réduite pour un petit écran */
+    }
+
+    .home-sub-title {
+        font-size: 1rem !important; /* Taille réduite pour un petit écran */
+    }
+
+    .web-and-mobile-illustration{
+        width: 80% !important;
+    }
+}
+
+.home-title {
+    color: #FFFCEC; /* conservez cette couleur si elle correspond à celle de l'image */
     text-align: center;
-    font-weight: 700;
-    font-size: 5rem;
-    line-height: 0.975em;
-    letter-spacing: -0.05em;
+    margin: 5px;
+    font-weight: 700; /* Augmentez le poids si nécessaire */
+    font-size: 3.5rem; /* Ajustez la taille en fonction de l'image */
+    line-height: 3rem; /* Ajustez l'interligne pour une meilleure lisibilité */
+    letter-spacing: -0.08em; /* Ajustez l'espacement des lettres comme nécessaire */
     max-width: 90vw;
     margin-bottom: 0;
 }
-
-.home-section h2{
-    color : #ff8a90;
+.home-sub-title {
+    color : var(--accent-color); /* ajustez cette couleur pour qu'elle corresponde à celle de l'image */
     text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 0.975em;
-    letter-spacing: -0.05em;
+    font-weight: 700; /* Ajustez le poids si nécessaire */
+    font-size: 2rem; /* Ajustez la taille en fonction de l'image */
+    line-height: 1.1; /* Ajustez l'interligne pour une meilleure lisibilité */
+    letter-spacing: -0.05em; /* Ajustez l'espacement des lettres comme nécessaire */
     max-width: 90vw;
 }
 
 .noise {
     background-image: url(../../media/noise-light.png);
     background-size :auto;
+    height: 100%;
 }
+
+
+.web-and-mobile {
+    display: flex;
+    justify-content: center; /* Centrer les composants horizontalement */
+    align-items: stretch; /* Étirer les enfants pour qu'ils aient la même hauteur */
+}
+
+.title-and-image-container {
+    display: flex;
+    justify-content: center; /* Centrer le contenu dans le conteneur */
+    align-items: center; /* Centrer le contenu verticalement */
+    flex-direction: column; /* Empiler le titre et l'image verticalement */
+    margin: 5px;
+    flex: 1; /* Distribuer l'espace équitablement entre les conteneurs */
+    max-height: 600px;
+    width: 50%; /* Vous pouvez ajuster ou supprimer cette propriété si nécessaire */
+}
+
+.title-and-image-container h2{
+    color : var(--accent-color); /* ajustez cette couleur pour qu'elle corresponde à celle de l'image */
+    text-align: center;
+    font-weight: 700; /* Ajustez le poids si nécessaire */
+    font-size: 2rem; /* Ajustez la taille en fonction de l'image */
+    line-height: -0.08; /* Ajustez l'interligne pour une meilleure lisibilité */
+    letter-spacing: -0.05em; /* Ajustez l'espacement des lettres comme nécessaire */
+    max-width: 90vw;
+}
+
+.image-container{
+    width: 70%;
+    height: 70%;
+    object-fit: contain
+}
+
+.image-container img{
+    object-fit: contain;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .zigzag-border {
     background: #ffffff;
     padding: 50px 0;
