@@ -8,7 +8,7 @@ class Header extends Component {
       <div>
         <header className="header-master-container">
           <nav className="logo-and-section-container">
-            <a href="AM-Logo" className="logo-container">
+            <a href="/" className="logo-container">
               <img
                 src={LogoAM}
                 width="40px"
@@ -19,22 +19,28 @@ class Header extends Component {
             </a>
             <ul className="sections-container">
               <li>
-                <a href="Adlane OULD c'est qui" className="section-link">
+                <a href="/" className="section-link">
                   Who A.M I ?
                 </a>
               </li>
               <li>
-                <a href="Adlane OULD Projets" className="section-link">
+                <a href="/" className="section-link">
                   Project
                 </a>
               </li>
             </ul>
           </nav>
+
+          <div class="menu-icon" id="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" />
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div className="contact-container">
-            <a href="Adlane OULD ContactezMoi" className="contact-me-button-container">
-              <button className="contact-me">
-                Contact Me
-              </button>
+            <a href="/"className="contact-me-button-container">
+              <button className="contact-me">Contact Me</button>
             </a>
           </div>
         </header>
