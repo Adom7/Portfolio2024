@@ -5,7 +5,6 @@ import LogoAM from "../../media/logo-AM.png";
 class Header extends Component {
   render() {
     return (
-      <div>
         <header className="header-master-container">
           <nav className="logo-and-section-container">
             <a href="/" className="logo-container">
@@ -44,7 +43,6 @@ class Header extends Component {
             </a>
           </div>
         </header>
-      </div>
     );
   }
 }

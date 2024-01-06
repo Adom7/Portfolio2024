@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Prend toute la largeur de la page */
+  width: 95%;
   height: 40px;
   font-family: var(--fonts-softSans);
   color: #FFFCEC;
@@ -31,7 +31,7 @@
 
   
   .sections-container, .contact-container {
-    display: none; /* Cache les éléments du menu principal */
+    display: none; 
   }
 }
 
@@ -39,6 +39,7 @@
 .logo-and-section-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-container {
