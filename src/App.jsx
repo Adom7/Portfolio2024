@@ -10,15 +10,7 @@ function App() {
     <div className="App">
       <div className="Home">
         <HomeSection/>
-      </div>
-        <div className="logo">
-            <img
-              className="logoPNG"
-              src={logoAM}
-              alt="Logo A.M Adlane.Ould :)"
-            />
-        </div>
-      <div>
+
         {HeroConfig.map((section, index) => (
           <HeroSection key={index} {...section} />
         ))}
@@ -28,3 +20,15 @@ function App() {
 }
 
 export default App;
+
+
+  
+// </div>
+// <div className="logo">
+//     <img
+//       className="logoPNG"
+//       src={logoAM}
+//       alt="Logo A.M Adlane.Ould :)"
+//     />
+// </div>
+// <div>

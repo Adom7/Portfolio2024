@@ -9,7 +9,7 @@
   color: #FFFCEC;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
   .header-master-container {
     justify-content: center;
@@ -25,7 +25,7 @@
   
 
   .menu-icon {
-    display: auto;
+    display: block;
     cursor: pointer;
   }
 
@@ -130,6 +130,7 @@
   }
 }
 .menu-icon {
+  display: none;
   @media (max-width: 800px) {
     position: absolute;
     right : 0px;

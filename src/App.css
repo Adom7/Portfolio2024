@@ -1,11 +1,11 @@
 :root{
   --primary-color : #34568B;
   --accent-color : #FF6F61;
-  --background-color : #FAFAFA;
+  --background-color : #FFFCEC;
   --text-color : #333333;
   --secondary-accent-color : #88BDBC;
    /* background-image: url('./media/backgroundImageDarkMode.png'); */
-   background-image: url('./media/backgroundImageLightMode.png');
+   /* background-image: url('./media/backgroundImageLightMode.png'); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

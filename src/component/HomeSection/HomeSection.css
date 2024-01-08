@@ -16,8 +16,12 @@
 }
 
 .home-content {
-    padding : 4.5rem 0 0 0;
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4.5rem 0 0 0;
+    max-width: 90%;
+    height: 100%;                 
 }
 
 @media (max-width: 600px) {
@@ -32,6 +36,7 @@
     .web-and-mobile-illustration{
         width: 80% !important;
     }
+
 }
 
 .home-title {
@@ -62,10 +67,19 @@
 }
 
 
+@media(max-width : 1372px){
+    .web-and-mobile {
+        flex-wrap: wrap;
+    }
+}
+
+
 .web-and-mobile {
     display: flex;
     justify-content: center; /* Centrer les composants horizontalement */
     align-items: stretch; /* Étirer les enfants pour qu'ils aient la même hauteur */
+    width: 100%;
+    bottom: 10px;
 }
 
 .title-and-image-container {
@@ -77,6 +91,8 @@
     flex: 1; /* Distribuer l'espace équitablement entre les conteneurs */
     max-height: 600px;
     width: 50%; /* Vous pouvez ajuster ou supprimer cette propriété si nécessaire */
+    flex-wrap: nowrap;
+
 }
 
 .title-and-image-container h2{
@@ -87,17 +103,19 @@
     line-height: -0.08; /* Ajustez l'interligne pour une meilleure lisibilité */
     letter-spacing: -0.05em; /* Ajustez l'espacement des lettres comme nécessaire */
     max-width: 90vw;
+    width: 600px;
+    margin: 0 0px ;
 }
 
 .image-container{
-    width: 70%;
-    height: 70%;
+    height: 294px;
     object-fit: contain
 }
 
 .image-container img{
     object-fit: contain;
     display: flex;
+    height: 70%;
     width: 100%;
 }
 

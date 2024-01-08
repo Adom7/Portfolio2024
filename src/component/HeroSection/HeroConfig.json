@@ -1,7 +1,7 @@
 [
     {
-      "title": "Bienvenue sur mon Portfolio",
-      "subtitle": "Développeur FullStack & Freelance",
+      "title": "Who A.M I ?",
+      "subtitle": "Développeur Front-end Web & Mobile",
       "hasButton": false
     },
     {
@@ -14,7 +14,8 @@
     {
         "title": "Contactez moi !",
         "subtitle": "Voici mes reseaux , contactez moi si vous souhaitez trouver une solution a votre problème ! :)",
-        "hasButton": false
+        "hasButton": true,
+        "buttonLabel": "Contact me via Malt"
       }
   ]
   

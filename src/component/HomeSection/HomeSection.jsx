@@ -23,7 +23,7 @@ class HomeSection extends Component {
                 </div>
               </div>
               <div className="title-and-image-container">
-                <h2>mobile</h2>
+                <h2>Mobile</h2>
                 <div className="image-container">
                   <img src={mobile} alt="" srcset="" />
                 </div>

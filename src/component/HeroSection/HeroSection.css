@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans:wght@400&display=swap');
-
-
 .hero-section {
   /* Styles de la section héro */
   display: flex;
@@ -13,7 +10,8 @@
 
 .hero-profile-img {
   /* Styles pour l'image de profil */
-  width: 100px; /* ou la taille que tu veux */
+  width: 100px;
+  /* ou la taille que tu veux */
   border-radius: 50%;
 }
 
@@ -29,33 +27,40 @@
 }
 
 
-.hero-content h2{
-  font-family: 'Roboto Slab', serif;
+.hero-content h1 {
+  font-family: var(--fonts-softSans);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
-.hero-content p{
+.hero-content p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
-.hero-content button{
+.hero-content button {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background: rgba(52, 86, 139, 0.5); /* --primary-color avec transparence */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure légère pour l'effet de verre */
-  border-radius: 5px; /* Coins légèrement arrondis */
+  background: rgba(52, 86, 139, 0.5);
+  /* --primary-color avec transparence */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Bordure légère pour l'effet de verre */
+  border-radius: 5px;
+  /* Coins légèrement arrondis */
   backdrop-filter: blur(5px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Ombre subtile pour la profondeur */
   transition: background-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
 .hero-content button:hover {
-  background: rgba(52, 86, 139, 0.7); /* Couleur un peu moins transparente au survol */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+  background: rgba(52, 86, 139, 0.7);
+  /* Couleur un peu moins transparente au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Ombre plus prononcée au survol */
 }
 
 /* .hero-title {
