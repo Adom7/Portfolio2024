@@ -1,29 +1,38 @@
 .hero-section {
-  /* Styles de la section héro */
   display: flex;
   flex-direction: column;
-  height: 100%;
-  margin-top: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  background-image: url(../../media/noise-light.png);
+  overflow: hidden;
+
+  /* background-image: url(../../media/glass-background.jpg); */
 }
 
 .hero-profile-img {
-  /* Styles pour l'image de profil */
   width: 100px;
-  /* ou la taille que tu veux */
   border-radius: 50%;
 }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
-  backdrop-filter: blur(10px);
-  height: max-content;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(000, 000, 000, 0.20);
+  height: 60%;
+  width: 60%;
   min-height: 150px;
   text-align: center;
+}
+
+.noise {
+  background-image: url(../../media/noise-light.png);
+  background-size: auto;
+  height: 100%;
 }
 
 
@@ -44,30 +53,16 @@
   font-weight: bold;
   color: #fff;
   background: rgba(52, 86, 139, 0.5);
-  /* --primary-color avec transparence */
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* Bordure légère pour l'effet de verre */
   border-radius: 5px;
-  /* Coins légèrement arrondis */
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Ombre subtile pour la profondeur */
   transition: background-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
 .hero-content button:hover {
   background: rgba(52, 86, 139, 0.7);
-  /* Couleur un peu moins transparente au survol */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  /* Ombre plus prononcée au survol */
 }
 
-/* .hero-title {
-}
-
-.hero-subtitle {
-}
-
-.hero-cta {
-} */

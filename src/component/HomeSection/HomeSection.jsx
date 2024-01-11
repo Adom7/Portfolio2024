@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./../HomeSection/HomeSection.css";
 import Header from "../Header/Header.jsx";
-import web from "../../media/Web-alone.png";
-import mobile from "../../media/mobile-alone.png";
-import webAndMobile from "../../media/WebAndMobile.png";
+import web from "../../media/AppleDevices/MacbookBlack.png";
+import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 
 class HomeSection extends Component {
   render() {
@@ -19,13 +18,13 @@ class HomeSection extends Component {
                <div className="title-and-image-container">
                 <h2>Web</h2>
                 <div className="image-container">
-                  <img src={web} alt="" srcset="" />
+                  <img className="floating-rotate" src={web} alt="" srcset="" />
                 </div>
               </div>
               <div className="title-and-image-container">
                 <h2>Mobile</h2>
                 <div className="image-container">
-                  <img src={mobile} alt="" srcset="" />
+                  <img  className="floating-rotate" src={mobile} alt="" srcset="" />
                 </div>
               </div>  
             </div>
