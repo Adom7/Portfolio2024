@@ -6,9 +6,13 @@
   height: 100vh;
   background-color: var(--background-color);
   background-image: url(../../media/noise-light.png);
-  overflow: hidden;
+}
 
-  /* background-image: url(../../media/glass-background.jpg); */
+.meteorite {
+  overflow: hidden; 
+  width: max-content; 
+  height: fit-content;
+  height: auto;
 }
 
 .hero-profile-img {
