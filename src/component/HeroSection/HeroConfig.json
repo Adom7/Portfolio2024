@@ -1,21 +1,32 @@
 [
     {
+      "sectionName" : "Who A.M I ?",
       "title": "Who A.M I ?",
-      "subtitle": "Développeur Front-end Web & Mobile",
-      "hasButton": false
+      "subtitle": "Hello Moi c'est Adlane !" ,
+      "description" : "Je suis actuellement en alternance et je me spécialise dans le Front-End, bien que je vienne d'une formation Full-Stack (Back et Front End);\n \nJ'aime résoudre des problèmes et donner vie aux idées et aux visions des gens autour de moi;\n \nJ'aime aussi me faciliter la vie. Un des meilleurs exemples que je peux donner est mon JobHunter, que je présente plus en détail plus bas dans la section projets. C'est mon petit bot Python qui postule à ma place sur les sites d'emploi. Pratique, non ?;",
+      "hasButton": false,
+      "illustration": "peaceHand.png"
     },
     {
+      "sectionName" : "Projects",
       "title": "Mes Projets",
       "subtitle": "Jetez un œil à mes dernières réalisations",
+      "description" : "",
       "hasButton": true,
       "buttonLabel": "Explorer",
-      "imageUrl": "path_to_another_background_image.jpg"
+      "illustration": "rocket.png"
     },
     {
-        "title": "Contactez moi !",
-        "subtitle": "Voici mes reseaux , contactez moi si vous souhaitez trouver une solution a votre problème ! :)",
-        "hasButton": true,
-        "buttonLabel": "Contact me via Malt"
+      "sectionName" : "Contact Me !",
+      "isCallToAction" : true,
+      "title": "Contactez moi !",
+      "subtitle": "Voici mes reseaux , contactez moi si vous souhaitez trouver une solution a votre problème ! :)",
+      "description" : "",
+      "hasButton": true,
+      "buttonLabel": "Contact me via Malt",
+      "illustration": "megaphone.png"
       }
   ]
+
+  
   

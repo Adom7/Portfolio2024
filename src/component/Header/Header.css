@@ -1,5 +1,5 @@
 .header-master-container {
-  margin-top: 35px  ;
+  margin-top: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,23 +15,26 @@
     justify-content: center;
   }
 
-  .sections-container a,li, .contact-container {
-    display: none; 
-  }
-
-  .logo-and-section-container ul{
+  .sections-container a,
+  li,
+  .CTA-container {
     display: none;
   }
-  
+
+  .logo-and-section-container ul {
+    display: none;
+  }
+
 
   .menu-icon {
     display: block;
     cursor: pointer;
   }
 
-  
-  .sections-container, .contact-container {
-    display: none; 
+
+  .sections-container,
+  .CTA-container {
+    display: none;
   }
 }
 
@@ -86,18 +89,15 @@
 
 .section-link:hover {
   transform: scale(1.1);
-  /* Agrandit à 1.1 fois sa taille */
   background-color: rgba(0, 0, 0, 0.10);
-  /* Change le fond au survol */
 }
 
-.contact-me-button-container{
+.CTA-button-container {
+  font-family: var(--fonts-softSans) ;
+  font-size: 700;
   text-decoration: none;
-}
-
-.contact-me {
   font-size: 12px;
-  color: var(--colors-brandBlue);
+  color:var(--primary-color);
   padding: 4px 20px;
   border: none;
   background: white;
@@ -120,114 +120,6 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 
-.contact-me:hover {
+.CTA-button:hover {
   transform: scale(1.1);
-}
-
-.menu-icon{
-  @media (min-width:801px) {
-    display: none;
-  }
-}
-.menu-icon {
-  display: none;
-  @media (max-width: 800px) {
-    position: absolute;
-    right : 0px;
-    top:30px;
-	width: 50px;
-	height: 50px;
-	cursor: pointer;
-  }
-
-  
-	.menu-icon__cheeckbox {
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: relative;
-		cursor: pointer;
-		z-index: 2;
-		-webkit-touch-callout: none;
-		position: absolute;
-		opacity: 0;
-	}
-	div {
-		margin: auto;
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		width: 22px;
-		height: 12px;
-	}
-	span {
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 2px;
-		background-color: var(--bar-bg, #000);
-		border-radius: 1px;
-		transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
-
-		&:first-of-type {
-			top: 0;
-		}
-		&:last-of-type {
-			bottom: 0;
-		}
-	}
-	&.active,
-	.menu-icon__cheeckbox:checked + div {
-		span {
-			&:first-of-type {
-				transform: rotate(45deg);
-				top: 5px;
-			}
-			&:last-of-type {
-				transform: rotate(-45deg);
-				bottom: 5px;
-			}
-		}
-	}
-
-	&.active:hover span:first-of-type,
-	&.active:hover span:last-of-type,
-	&:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
-	&:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
-		width: 22px;
-	}
-
-	&:hover {
-		@media (min-width: 1024px) {
-			span:first-of-type {
-				width: 26px;
-			}
-
-			span:last-of-type {
-				width: 12px;
-			}
-		}
-	}
-}
-
-
-.full-screen-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: red; /* ou la couleur de votre choix */
-  z-index: 100; /* Assurez-vous qu'il est au-dessus des autres éléments */
-  transition: transform 0.3s ease;
-  transform: translateY(-100%); /* Commence hors de l'écran */
-}
-
-/* Utilisez le sélecteur adjacent pour afficher le menu lorsque la checkbox est cochée */
-.menu-icon__cheeckbox:checked ~ .full-screen-menu {
-  display: block;
-  transform: translateY(0); /* Glisse pour remplir l'écran */
 }

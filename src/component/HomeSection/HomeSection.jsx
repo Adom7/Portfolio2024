@@ -6,10 +6,12 @@ import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 
 class HomeSection extends Component {
   render() {
+    const { heroConfig } = this.props; // Récupère heroConfig des props
+
     return (
       <div className="home-section-master">
-        <div class="home-section noise">
-          <Header />
+        <div className="home-section noise">
+          <Header sections={heroConfig} />
           <div class="home-content">
             <h1 className="home-title">Adlane Ould Mohand</h1>
             <h1 className="home-title">A . M</h1>

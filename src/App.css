@@ -51,7 +51,7 @@ h1.logo {
 
 .floating {
   position: relative;
-  animation: float 4s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -67,7 +67,7 @@ h1.logo {
 
 
 .floating-rotate {
-  animation: float-rotate 4s ease-in-out infinite;
+  animation: float-rotate 15s ease-in-out infinite;
 }
 
 

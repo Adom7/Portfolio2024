@@ -20,7 +20,7 @@
   border-radius: 50%;
 }
 
-.hero-content {
+.hero-card {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -31,6 +31,10 @@
   width: 60%;
   min-height: 150px;
   text-align: center;
+
+  display : flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .noise {
@@ -39,6 +43,17 @@
   height: 100%;
 }
 
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+  width: 50%;
+}
+
+.hero-card-illustration{
+  width: 50%;
+}
 
 .hero-content h1 {
   font-family: var(--fonts-softSans);
@@ -46,9 +61,17 @@
   font-weight: 700;
 }
 
+.hero-content h2 {
+  font-family: var(--fonts-softSans);
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
 .hero-content p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--text-color);
+  width: 80%;
 }
 
 .hero-content button {

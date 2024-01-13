@@ -67,7 +67,7 @@
 }
 
 
-@media(max-width : 1372px){
+@media(max-width : 900px){
     .web-and-mobile {
         flex-wrap: wrap;
     }
@@ -108,7 +108,7 @@
 }
 
 .image-container{
-    height: 294px;
+    height: 400px;
     object-fit: contain
 }
 
