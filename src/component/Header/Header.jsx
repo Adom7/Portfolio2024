@@ -33,8 +33,6 @@ class Header extends Component {
             ))}
           </ul>
         </nav>
-
-          
           {callToActionSection && (
             <div className="CTA-container">
               <button

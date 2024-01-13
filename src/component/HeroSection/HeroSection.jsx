@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeroSection.css";
-// import rocket from "../../media/rocket.png";
 import clay1 from "../../media/floating/Clay_Black0001.png";
 import clay2 from "../../media/floating/Clay_Black0002.png";
 import clay3 from "../../media/floating/Clay_Black0003.png";
@@ -20,6 +19,29 @@ const HeroSection = ({
   buttonLabel,
   illustration,
 }) => {
+
+
+ function getrandomMeteoritePlace(){
+  const plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+  return {
+    position: "absolute ",
+    left: Math.round(Math.random() * 80) + "%",
+    marginTop: Math.round(Math.random() * plusOrMinus * 10) + "px",
+    height: "70%",
+  };
+  }
+
+  
+
+  function getrandomPosition() {
+     return { position: "absolute ",
+      marginRight:  Math.round(Math.random() * 80) + "%",
+      marginBottom:  Math.round(Math.random() * 50) + "%",
+      height: "20%",}
+  }
+
+  const deplacementCSS = ["flight-throught-tl-br", "rotate" , ];
+
   const clayImages = [
     clay1,
     clay2,
@@ -33,58 +55,53 @@ const HeroSection = ({
     cla10,
   ];
 
-  const randomIndex = Math.floor(Math.random() * clayImages.length);
-  const randomClayImage = clayImages[randomIndex];
+  const randomDeplacementIndex = Math.floor(Math.random() * deplacementCSS.length);
+  const randomDeplacementCSS = deplacementCSS[randomDeplacementIndex];
+
+  function getRandomClayImage(){
+  const randomClayIndex = Math.floor(Math.random() * clayImages.length);
+  const randomClayImage = clayImages[randomClayIndex];
+    return randomClayImage
+  }
 
   const imageUrl = illustration ? require(`../../media/${illustration}`) : undefined;
 
-  const descriptionParagraph = description.split('\n').map((str, index) => (
+  const descriptionParagraph = description.split("\n").map((string, index) => (
     <span key={index}>
-      {str}
+      {string}
       <br />
     </span>
   ));
 
   return (
     <div className="hero-section">
-      <div className="meteorite">
         <img
-          className=" flight-throught-tl-br"
-          src={clay1}
+          className={`${randomDeplacementCSS}`}
+          src={getRandomClayImage()}
           alt=""
-          style={{
-            position: "absolute ",
-            marginRight: "70%",
-            marginBottom: "20%",
-            height: "20%",
-          }}
+          style={getrandomPosition()}
         />
-      </div>
+
       <img
         className="floating-rotate"
-        src={randomClayImage}
+        src={getRandomClayImage()}
         alt=""
-        style={{
-          position: "absolute ",
-          marginLeft: "90%",
-          marginTop: "-6  0%",
-          height: "50%",
-        }}
+        style={getrandomMeteoritePlace()}
       />
 
       <div className="hero-card">
         <div className="hero-content">
-          <h1 >{title}</h1>
-          <h2 >{subtitle}</h2>
-          <p >{descriptionParagraph}</p>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <p>{descriptionParagraph}</p>
           {hasButton && <button className="hero-cta">{buttonLabel}</button>}
         </div>
         {illustration && (
-            <img
-              src={imageUrl}
-              alt="illustration"
-              className="hero-card-illustration floating"
-            />
+          <img
+            src={imageUrl}
+            alt="illustration"
+            className="hero-card-illustration floating"
+          />
         )}
       </div>
     </div>
@@ -92,8 +109,3 @@ const HeroSection = ({
 };
 
 export default HeroSection;
-
-// export const clayStyle = {
-//   position : "relative",
-//   top : Math.random
-// }

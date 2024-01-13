@@ -8,13 +8,6 @@
   background-image: url(../../media/noise-light.png);
 }
 
-.meteorite {
-  overflow: hidden; 
-  width: max-content; 
-  height: fit-content;
-  height: auto;
-}
-
 .hero-profile-img {
   width: 100px;
   border-radius: 50%;
