@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .button-secondary {
   background-color: var(--secondary-accent-color);
   color: #fff; 

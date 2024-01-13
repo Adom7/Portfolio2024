@@ -5,6 +5,7 @@ import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 
 class HomeSection extends Component {
+
   render() {
     const { heroConfig } = this.props; // Récupère heroConfig des props
 
@@ -20,13 +21,17 @@ class HomeSection extends Component {
                <div className="title-and-image-container">
                 <h2>Web</h2>
                 <div className="image-container">
-                  <img className="floating-rotate" src={web} alt="" srcset="" />
+                  <a href="#Prices-Web">
+                  <img  className="floating-rotate" src={web} alt="" srcset="" />
+                  </a>
                 </div>
               </div>
               <div className="title-and-image-container">
                 <h2>Mobile</h2>
                 <div className="image-container">
+                <a href="#Prices-Mobile">
                   <img  className="floating-rotate" src={mobile} alt="" srcset="" />
+                  </a>
                 </div>
               </div>  
             </div>
