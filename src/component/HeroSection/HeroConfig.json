@@ -22,10 +22,10 @@
       "title": "Contactez moi !",
       "subtitle": "Voici mes reseaux , contactez moi si vous souhaitez trouver une solution a votre problème ! :)",
       "description" : "",
-      "hasButton": true,
+      "hasButton": false,
       "buttonLabel": "Contact me via Malt",
       "illustration": "megaphone.png",
-      "socialMedia" : [ { "imageLink" : "Socials/linkedin.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/youtube.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/tiktok.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/malt.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"}]
+      "socialMedia" : [ { "imageLink" : "Socials/linkedin.png" , "socialLink" : "https://www.linkedin.com/in/adlane-ould-1ba51917a/"} , {"imageLink" : "Socials/youtube.png" , "socialLink" : "https://www.youtube.com/@a.m3490"}, { "imageLink" : "Socials/malt.png" , "socialLink" : "https://www.malt.fr/profile/adlaneould"}]
       }
   ]
 
