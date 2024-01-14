@@ -20,19 +20,15 @@ class HomeSection extends Component {
             <div className="web-and-mobile">
                <div className="title-and-image-container">
                 <h2>Web</h2>
-                <div className="image-container">
                   <a href="#Prices-Web">
-                  <img  className="floating-rotate" src={web} alt="" srcset="" />
+                  <img  className="floating-rotate" height='300px' src={web} alt="" srcset="" />
                   </a>
-                </div>
               </div>
               <div className="title-and-image-container">
                 <h2>Mobile</h2>
-                <div className="image-container">
                 <a href="#Prices-Mobile">
-                  <img  className="floating-rotate" src={mobile} alt="" srcset="" />
+                  <img  className="floating-rotate" height='300px' src={mobile} alt="" srcset="" />
                   </a>
-                </div>
               </div>  
             </div>
           </div>

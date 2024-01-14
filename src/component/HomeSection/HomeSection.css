@@ -37,6 +37,11 @@
         width: 80% !important;
     }
 
+    .home-content {
+        padding: 2rem 0 0 0;
+    }
+
+
 }
 
 .home-title {
@@ -71,6 +76,7 @@
     .web-and-mobile {
         flex-wrap: wrap;
     }
+
 }
 
 
