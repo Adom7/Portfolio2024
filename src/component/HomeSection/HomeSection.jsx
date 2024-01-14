@@ -7,7 +7,7 @@ import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 class HomeSection extends Component {
 
   render() {
-    const { heroConfig } = this.props; // Récupère heroConfig des props
+    const { heroConfig } = this.props;
 
     return (
       <div className="home-section-master">

@@ -26,11 +26,11 @@
 
 @media (max-width: 600px) {
     .home-title {
-        font-size: 2rem !important; /* Taille réduite pour un petit écran */
+        font-size: 2rem !important; 
     }
 
     .home-sub-title {
-        font-size: 1rem !important; /* Taille réduite pour un petit écran */
+        font-size: 1rem !important; 
     }
 
     .web-and-mobile-illustration{
@@ -45,23 +45,23 @@
 }
 
 .home-title {
-    color: #FFFCEC; /* conservez cette couleur si elle correspond à celle de l'image */
+    color: #FFFCEC; 
     text-align: center;
     margin: 5px;
-    font-weight: 700; /* Augmentez le poids si nécessaire */
-    font-size: 3.5rem; /* Ajustez la taille en fonction de l'image */
-    line-height: 3rem; /* Ajustez l'interligne pour une meilleure lisibilité */
-    letter-spacing: -0.08em; /* Ajustez l'espacement des lettres comme nécessaire */
+    font-weight: 700;
+    font-size: 3.5rem; 
+    line-height: 3rem;
+    letter-spacing: -0.08em; 
     max-width: 90vw;
     margin-bottom: 0;
 }
 .home-sub-title {
-    color : var(--accent-color); /* ajustez cette couleur pour qu'elle corresponde à celle de l'image */
+    color : var(--accent-color);
     text-align: center;
-    font-weight: 700; /* Ajustez le poids si nécessaire */
-    font-size: 2rem; /* Ajustez la taille en fonction de l'image */
-    line-height: 1.1; /* Ajustez l'interligne pour une meilleure lisibilité */
-    letter-spacing: -0.05em; /* Ajustez l'espacement des lettres comme nécessaire */
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: 1.1; 
+    letter-spacing: -0.05em; 
     max-width: 90vw;
 }
 
@@ -82,32 +82,32 @@
 
 .web-and-mobile {
     display: flex;
-    justify-content: center; /* Centrer les composants horizontalement */
-    align-items: stretch; /* Étirer les enfants pour qu'ils aient la même hauteur */
+    justify-content: center;
+    align-items: stretch; 
     width: 100%;
     bottom: 10px;
 }
 
 .title-and-image-container {
     display: flex;
-    justify-content: center; /* Centrer le contenu dans le conteneur */
-    align-items: center; /* Centrer le contenu verticalement */
-    flex-direction: column; /* Empiler le titre et l'image verticalement */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
     margin: 5px;
-    flex: 1; /* Distribuer l'espace équitablement entre les conteneurs */
+    flex: 1; 
     max-height: 600px;
-    width: 50%; /* Vous pouvez ajuster ou supprimer cette propriété si nécessaire */
+    width: 50%; 
     flex-wrap: nowrap;
 
 }
 
 .title-and-image-container h2{
-    color : var(--accent-color); /* ajustez cette couleur pour qu'elle corresponde à celle de l'image */
+    color : var(--accent-color); 
     text-align: center;
-    font-weight: 700; /* Ajustez le poids si nécessaire */
-    font-size: 2rem; /* Ajustez la taille en fonction de l'image */
-    line-height: -0.08; /* Ajustez l'interligne pour une meilleure lisibilité */
-    letter-spacing: -0.05em; /* Ajustez l'espacement des lettres comme nécessaire */
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: -0.08; 
+    letter-spacing: -0.05em;
     max-width: 90vw;
     width: 600px;
     margin: 0 0px ;

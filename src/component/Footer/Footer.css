@@ -1,5 +1,5 @@
 .site-footer {
-  background: var(--primary-color); /* Utilisation de la couleur primaire pour le contraste */
+  background: var(--primary-color); 
   color: #fff;
   padding: 10px 0;
   text-align: center;
