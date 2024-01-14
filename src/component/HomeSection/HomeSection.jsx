@@ -5,7 +5,6 @@ import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 
 class HomeSection extends Component {
-
   render() {
     const { heroConfig } = this.props;
 
@@ -18,18 +17,34 @@ class HomeSection extends Component {
             <h1 className="home-title">A . M</h1>
             <h2 className="home-sub-title">Developpeur</h2>
             <div className="web-and-mobile">
-               <div className="title-and-image-container">
+              <div className="title-and-image-container">
                 <h2>Web</h2>
-                  <a href="#Prices-Web">
-                  <img  className="floating-rotate" height='300px' src={web} alt="" srcset="" />
-                  </a>
+                <a href="#Prices-Web">
+                <div className="home-illustration">
+                  <img
+                    className="floating-rotate"
+                    height="300px"
+                    src={web}
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                </a>
               </div>
               <div className="title-and-image-container">
                 <h2>Mobile</h2>
                 <a href="#Prices-Mobile">
-                  <img  className="floating-rotate" height='300px' src={mobile} alt="" srcset="" />
-                  </a>
-              </div>  
+                  <div className="home-illustration">
+                    <img
+                      className="floating-rotate"
+                      height="300px"
+                      src={mobile}
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

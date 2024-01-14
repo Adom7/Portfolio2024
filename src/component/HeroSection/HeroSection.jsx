@@ -18,6 +18,7 @@ const HeroSection = ({
   hasButton,
   buttonLabel,
   illustration,
+  socialMedia
 }) => {
 
 
@@ -66,6 +67,10 @@ const HeroSection = ({
 
   const imageUrl = illustration ? require(`../../media/${illustration}`) : undefined;
 
+  function getImagePath(image){
+    return require(`../../media/${image}`)
+  }
+
   const descriptionParagraph = description.split("\n").map((string, index) => (
     <span key={index}>
       {string}
@@ -91,14 +96,23 @@ const HeroSection = ({
 
       <div className="hero-card">
         <div className="hero-content">
-          <h1>{title}</h1>
+          <h1 className="home-title">{title}</h1>
           <h2>{subtitle}</h2>
           <p>{descriptionParagraph}</p>
+          {socialMedia && (
+          <div className="hero-social-media-icons">
+            {socialMedia.map((media, index) => (
+              <a key={index} href={media.socialLink} target="_blank" rel="noopener noreferrer">
+                <img src={getImagePath(media.imageLink)} alt={`Social media ${index + 1}`} />
+              </a>
+            ))}
+          </div>
+        )}
           {hasButton && <button className="hero-cta">{buttonLabel}</button>}
         </div>
         {illustration && (
           <img
-            src={imageUrl}
+            src={getImagePath(illustration)}
             alt="illustration"
             className="hero-card-illustration floating"
           />

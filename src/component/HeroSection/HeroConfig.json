@@ -24,7 +24,8 @@
       "description" : "",
       "hasButton": true,
       "buttonLabel": "Contact me via Malt",
-      "illustration": "megaphone.png"
+      "illustration": "megaphone.png",
+      "socialMedia" : [ { "imageLink" : "Socials/linkedin.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/youtube.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/tiktok.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"} , { "imageLink" : "Socials/malt.png" , "socialLink" : "https://www.youtube.com/watch?v=Sj1ptx0nFCM&list=OLAK5uy_kiBAlVohZAjVYT6JcPZF7fvIWLXkQ-qSQ&index=7"}]
       }
   ]
 
