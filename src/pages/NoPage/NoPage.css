@@ -1,0 +1,11 @@
+.no-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-page img{
+    width: 30%;
+}
+

@@ -1,26 +1,27 @@
 import "./App.css";
-import HeroConfig from "./component/HeroSection/HeroConfig.json";
-import HeroSection from "./component/HeroSection/HeroSection.jsx";
-import HomeSection from "./component/HomeSection/HomeSection.jsx";
+import ReactDOM from "react-dom/client";
+import { Routes, Route , BrowserRouter } from 'react-router-dom';
+import HomePage from "./pages/HomePage/HomePage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import NoPage from "./pages/NoPage/NoPage";
+
 
 function App() {
   return (
     <div className="App">
-      <div className="Home">
-      <HomeSection heroConfig={HeroConfig} />
-      </div>
-
-        {HeroConfig.map((section, index) => (
-          <div
-            key={index}
-            id={section.sectionName.replace(/\s+/g, "")}
-            className="section"
-          >
-            <HeroSection {...section} />
-          </div>
-        ))}
+       <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<HomePage />} />
+          <Route path="project" element={<ProjectPage />} />
+          {/* <Route path="contact" element={<ContactPage />} /> */}
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+    </BrowserRouter>
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 export default App;

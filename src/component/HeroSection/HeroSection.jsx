@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeroSection.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import clay1 from "../../media/floating/Clay_Black0001.png";
 import clay2 from "../../media/floating/Clay_Black0002.png";
@@ -12,7 +11,10 @@ import clay7 from "../../media/floating/Clay_Black0007.png";
 import clay8 from "../../media/floating/Clay_Black0008.png";
 import clay9 from "../../media/floating/Clay_Black0009.png";
 import clay10 from "../../media/floating/Clay_Black0010.png";
-import {faStar} from '@fortawesome/free-solid-svg-icons'
+import { LuSparkles } from "react-icons/lu";
+import { HiMiniSparkles } from "react-icons/hi2";
+
+
 
 const HeroSection = ({
   sectionName,
@@ -20,7 +22,7 @@ const HeroSection = ({
   subtitle,
   description,
   hasButton,
-  buttonLabel,
+  button,
   illustration,
   socialMedia,
   projectCard,
@@ -36,7 +38,7 @@ const HeroSection = ({
       position: "absolute ",
       left: Math.round(Math.random() * 80) + "%",
       marginTop: Math.round(Math.random() * plusOrMinus * 10) + "px",
-      height: "70%",
+      height: "65%",
     };
   }
 
@@ -110,12 +112,13 @@ const HeroSection = ({
           <h2>{subtitle}</h2>
           {projectCard ? (
             <div className="project-card">
-              <img src={getImagePath(projectCardImage)} alt="" />
-              <FontAwesomeIcon icon={faStar} className="icon" />
+              <img src={getImagePath(projectCardImage)} alt="" /> 
+              <HiMiniSparkles className="icon" />
             </div>
           ) : (
             <p>{descriptionParagraph}</p>
           )}
+          
           {socialMedia && (
             <div className="hero-social-media-icons">
               {socialMedia.map((media, index) => (
@@ -125,7 +128,8 @@ const HeroSection = ({
               ))}
             </div>
           )}
-          {hasButton && <button className="hero-cta">{buttonLabel}</button>}
+          {hasButton && <a href={button.link}><button className="hero-cta">{button.label}</button></a>
+          }
         </div>
         {illustration && (
           <img
