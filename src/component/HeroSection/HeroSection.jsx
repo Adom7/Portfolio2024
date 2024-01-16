@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import clay1 from "../../media/floating/Clay_Black0001.png";
 import clay2 from "../../media/floating/Clay_Black0002.png";
@@ -12,6 +12,7 @@ import clay7 from "../../media/floating/Clay_Black0007.png";
 import clay8 from "../../media/floating/Clay_Black0008.png";
 import clay9 from "../../media/floating/Clay_Black0009.png";
 import clay10 from "../../media/floating/Clay_Black0010.png";
+import {faStar} from '@fortawesome/free-solid-svg-icons'
 
 const HeroSection = ({
   sectionName,
@@ -110,6 +111,7 @@ const HeroSection = ({
           {projectCard ? (
             <div className="project-card">
               <img src={getImagePath(projectCardImage)} alt="" />
+              <FontAwesomeIcon icon={faStar} className="icon" />
             </div>
           ) : (
             <p>{descriptionParagraph}</p>

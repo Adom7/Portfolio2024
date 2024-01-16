@@ -161,11 +161,32 @@
   justify-content: center;
 }
 .project-card img {
-  width: 90%;
-  height : 90%;
+  width: 95%;
+  height : 95%;
   opacity: 80%;
+  margin-right: -18px;
+  border-radius: 12px;
 }
 
-.project-card {
-  
+.project-card .icon{
+  position: relative;
+  bottom: 50%;
+  left: 2%;
+  scale: 190%;
+  color: var(--accent-color);
+  animation: starRotate 8s linear infinite
 }
+
+.project-card .icon:hover{
+    animation-play-state: paused; 
+}
+
+@keyframes starRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
