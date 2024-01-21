@@ -17,9 +17,10 @@ class HomeSection extends Component {
           <div class="home-content">
             <h1 className="home-title">Adlane Ould Mohand</h1>
             <h1 className="home-title">A . M</h1>
-            <h2 className="home-sub-title">Developpeur</h2>
+            <h2 className="home-sub-title">Developpeur </h2>
+            <h2 className="home-sub-title">Front End</h2>
             <div className="web-and-mobile">
-              <div className="title-and-image-container">
+              <div className="title-and-image-container web">
                 <h2>Web</h2>
                 <a href="#Prices-Web">
                 <div className="home-illustration">
@@ -33,7 +34,7 @@ class HomeSection extends Component {
                 </div>
                 </a>
               </div>
-              <div className="title-and-image-container">
+              <div className="title-and-image-container mobile">
                 <h2>Mobile</h2>
                 <a href="#Prices-Mobile">
                   <div className="home-illustration">
