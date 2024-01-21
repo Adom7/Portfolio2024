@@ -39,6 +39,7 @@ const HeroSection = ({
       left: Math.round(Math.random() * 80) + "%",
       marginTop: Math.round(Math.random() * plusOrMinus * 10) + "px",
       height: "65%",
+      opacity : "0.8",
     };
   }
 
@@ -49,6 +50,8 @@ const HeroSection = ({
       marginRight: Math.round(Math.random() * 80) + "%",
       marginBottom: Math.round(Math.random() * 50) + "%",
       height: "20%",
+      opacity : "0.8",
+
     }
   }
 
