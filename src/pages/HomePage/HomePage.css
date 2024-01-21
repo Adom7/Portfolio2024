@@ -1,0 +1,41 @@
+.heros{
+    /* background-image: url('../../media/background.jpeg'); */
+    /* background: url('../../media/background.jpeg') no-repeat ; */
+
+    background: linear-gradient( to bottom, var(--primary-color), purple);
+
+  /* background: linear-gradient(135deg, #3139FB 25%, #3139FB 100%); */
+}
+
+.zigzag-border {
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.zigzag-border::before {
+    background: linear-gradient(-45deg, #FFFCEC 16px, transparent 0), 
+                linear-gradient(45deg, #FFFCEC 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 22px 32px;
+    content: '';
+    display: block;
+    height: 32px;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+}
+
+.zigzag-border::after {
+    background: linear-gradient(45deg, #FFFCEC 16px, transparent 0), 
+                linear-gradient(-45deg, #FFFCEC 16px, transparent 0);
+    background-repeat: repeat-x;
+    background-position: right-bottom;
+    background-size: 22px 32px;
+    content: '';
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}

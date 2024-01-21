@@ -89,7 +89,7 @@ const HeroSection = ({
   ));
 
   return (
-    <div className="hero-section">
+    <div className="hero-section noise">
       <div>
         <img
           className={`${randomDeplacementCSS}`}

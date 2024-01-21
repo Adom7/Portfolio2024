@@ -1,7 +1,5 @@
-
 .home-section-master{
     height: 100vh;
-
 }
 
 .home-section {
@@ -10,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #3139FB;
+    background-color: var(--primary-color);
     font-family: var(--fonts-softSans);
     overflow: hidden;
 }
@@ -41,6 +39,11 @@
         padding: 2rem 0 0 0;
     }
 
+    .big-logo{
+        width: 350px !important;
+        right: -50px !important;
+        bottom: -50px !important;
+    }
 
 }
 
@@ -65,18 +68,20 @@
     max-width: 90vw;
 }
 
-.noise {
-    background-image: url(../../media/noise-light.png);
-    background-size :auto;
-    height: 100%;
-}
-
-
 @media(max-width : 900px){
     .web-and-mobile {
         flex-wrap: wrap;
     }
 
+}
+
+.big-logo{
+    width: 500px;
+    position: absolute;
+    right: -100px;
+    bottom: -100px; 
+    transform: rotate(12deg);
+    z-index: 1;
 }
 
 
@@ -86,6 +91,7 @@
     align-items: stretch; 
     width: 100%;
     bottom: 10px;
+    z-index: 2;
 }
 
 .title-and-image-container {

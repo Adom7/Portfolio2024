@@ -3,10 +3,12 @@ import "./../HomeSection/HomeSection.css";
 import Header from "../Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
+import LogoAM from "../../media/logo-AM-light.png";
+import heroConfig from '../HeroSection/HeroConfig.json'
+
 
 class HomeSection extends Component {
   render() {
-    const { heroConfig } = this.props;
 
     return (
       <div className="home-section-master">
@@ -23,7 +25,7 @@ class HomeSection extends Component {
                 <div className="home-illustration">
                   <img
                     className="floating-rotate"
-                    height="300px"
+                    height="260px"
                     src={web}
                     alt=""
                     srcset=""
@@ -37,7 +39,7 @@ class HomeSection extends Component {
                   <div className="home-illustration">
                     <img
                       className="floating-rotate"
-                      height="300px"
+                      height="260px"
                       src={mobile}
                       alt=""
                       srcset=""
@@ -46,6 +48,7 @@ class HomeSection extends Component {
                 </a>
               </div>
             </div>
+            <img src={LogoAM} alt="" className="big-logo" />
           </div>
         </div>
       </div>

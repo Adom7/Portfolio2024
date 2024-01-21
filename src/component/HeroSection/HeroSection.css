@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--background-color);
-  background-image: url(../../media/noise-light.png);
+  /* background-color: var(--primary-color); */
+  /* background-image: url(../../media/noise-light.png); */
 }
 
 .hero-profile-img {
@@ -14,7 +14,7 @@
 }
 
 .hero-card {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.5px);
@@ -22,7 +22,7 @@
   border: 1px solid rgba(000, 000, 000, 0.20);
   min-height: 60%;
   max-height: 98%;
-  width: 60%;
+  width: 80%;
   min-height: 150px;
   text-align: center;
   display : flex;
@@ -30,11 +30,7 @@
   align-items: center;
 }
 
-.noise {
-  background-image: url(../../media/noise-light.png);
-  background-size: auto;
-  height: 100%;
-}
+
 
 
 .hero-content{
@@ -68,7 +64,7 @@
 .hero-content p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--text-color-light);
   width: 80%;
 }
 

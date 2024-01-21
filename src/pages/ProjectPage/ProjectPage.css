@@ -1,0 +1,21 @@
+.project-page{
+    background: linear-gradient( to bottom, var(--primary-color), purple);
+    height:100vh;
+    min-height: 100%;
+}
+
+.d2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+.d2 > h1{
+    margin-top: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--fonts-softSans);
+    color: var(--text-color-light);
+}  

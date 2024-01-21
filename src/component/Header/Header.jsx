@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import LogoAM from "../../media/logo-AM.png";
+import LogoAM from "../../media/logo-AM-black.png";
 
 class Header extends Component {
   navigateToSection = (sectionId) => {
