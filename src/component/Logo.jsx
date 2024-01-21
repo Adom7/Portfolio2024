@@ -10,7 +10,6 @@ class Logo extends Component {
             height="633"
             viewBox="0 0 750 633"
             preserveAspectRatio="xMidYMid"
-            id="logo-svg"
           >
             <path
               style={{
@@ -35,7 +34,7 @@ class Logo extends Component {
                 strokeOpacity:1
               }}
               d="m 333.07674,276.02192 c -5.91109,1.79903 -11.82217,3.59805 -17.73325,5.39708"
-              id="logo-svg"
+              id="bar-logo"
             />
           </svg>
             </div>

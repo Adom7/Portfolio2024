@@ -63,15 +63,6 @@ h1.logo {
 }
 
 
-.big-logo{
-  width: 500px;
-  position: absolute;
-  right: -100px;
-  bottom: -100px; 
-  transform: rotate(12deg);
-  z-index: 1;
-  opacity: 0.5;
-}
 
 
 

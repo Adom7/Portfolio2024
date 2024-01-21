@@ -4,12 +4,12 @@ import Header from "../Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 import LogoAM from "../../media/logo-AM-light.png";
-import heroConfig from '../HeroSection/HeroConfig.json'
+import LogoSVG from "../Logo.jsx";
 
+import heroConfig from "../HeroSection/HeroConfig.json";
 
 class HomeSection extends Component {
   render() {
-
     return (
       <div className="home-section-master">
         <div className="home-section noise">
@@ -23,15 +23,15 @@ class HomeSection extends Component {
               <div className="title-and-image-container web">
                 <h2>Web</h2>
                 <a href="#Prices-Web">
-                <div className="home-illustration">
-                  <img
-                    className="floating-rotate"
-                    height="260px"
-                    src={web}
-                    alt=""
-                    srcset=""
-                  />
-                </div>
+                  <div className="home-illustration">
+                    <img
+                      className="floating-rotate"
+                      height="260px"
+                      src={web}
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
                 </a>
               </div>
               <div className="title-and-image-container mobile">
@@ -49,7 +49,9 @@ class HomeSection extends Component {
                 </a>
               </div>
             </div>
-            <img src={LogoAM} alt="" className="big-logo" />
+            <div className="big-logo">
+              <LogoSVG/>
+            </div>
           </div>
         </div>
       </div>
