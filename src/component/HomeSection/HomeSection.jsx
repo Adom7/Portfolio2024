@@ -3,7 +3,6 @@ import "./../HomeSection/HomeSection.css";
 import Header from "../Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
-import LogoAM from "../../media/logo-AM-light.png";
 import LogoSVG from "../Logo.jsx";
 
 import heroConfig from "../HeroSection/HeroConfig.json";
