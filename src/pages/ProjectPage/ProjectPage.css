@@ -45,3 +45,18 @@
     from { stroke-dashoffset: 18 ; visibility: visible; }
     to {  stroke-dashoffset: 0 ;  visibility: visible;}
   }
+
+
+  #logo-line {
+    stroke-dasharray: 1251;
+    stroke-dashoffset: 795;
+    animation: logo-line linear forwards;
+    animation-timeline: scroll();
+    width: 100vh;
+    /* visibility: hidden; */
+}
+
+@keyframes logo-line {
+    from { stroke-dashoffset: 795 ; visibility: visible; }
+    to {  stroke-dashoffset: 0 ;  visibility: visible;}
+}
