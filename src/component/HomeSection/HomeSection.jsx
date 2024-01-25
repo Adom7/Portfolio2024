@@ -4,6 +4,7 @@ import Header from "../Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 import LogoSVG from "../Logos/Logo.jsx";
+import LogoLine from "../Logos/LogoLine.jsx";
 
 import heroConfig from "../HeroSection/HeroConfig.json";
 
@@ -51,7 +52,8 @@ class HomeSection extends Component {
               </div>
             </div>
             <div className="big-logo">
-              <LogoSVG/>
+              {/* <LogoSVG/> */}
+              <LogoLine />
             </div>
           </div>
         </div>
