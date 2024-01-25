@@ -32,32 +32,45 @@
     visibility: hidden;
 }
 
-@keyframes logo-appear {
-    from {
-        stroke-dashoffset: 4092; visibility: visible;
-    }
-
-    to {
-        stroke-dashoffset: 0; visibility: visible;
-    }
-
-}
   @keyframes bar-logo {
     from { stroke-dashoffset: 18 ; visibility: visible; }
     to {  stroke-dashoffset: 0 ;  visibility: visible;}
   }
 
 
-  #logo-line {
+#logo {
     stroke-dasharray: 1251;
     stroke-dashoffset: 795;
-    animation: logo-line linear forwards;
-    animation-timeline: scroll();
+    animation: logo-appear 2s linear forwards;
     width: 100vh;
-    /* visibility: hidden; */
 }
 
-@keyframes logo-line {
-    from { stroke-dashoffset: 795 ; visibility: visible; color: var(--primary-color); }
-    to {  stroke-dashoffset: 0 ;  visibility: visible; color: var(--accent-color);}
+#line {
+    stroke-dasharray: 1251;
+    animation: line-appear linear 2s forwards;
+    animation-timeline: scroll();
+}
+
+@keyframes line-appear {
+    0% {
+        stroke-dashoffset: 1251
+    }
+    1% {
+        stroke-dashoffset: 795;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+
+}
+
+@keyframes logo-appear {
+    from {
+        stroke-dashoffset: 1251; visibility: visible;
+    }
+
+    to {
+        stroke-dashoffset: 795; visibility: visible;
+    }
+
 }

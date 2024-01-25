@@ -5,12 +5,18 @@ import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
 import LogoSVG from "../Logos/Logo.jsx";
 import LogoLine from "../Logos/LogoLine.jsx";
+import LogoLineLine from "../Logos/LogoLineLine.jsx";
+
+import gsap from "gsap";
 
 import heroConfig from "../HeroSection/HeroConfig.json";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const homeSectionConfig = { name : "Adlane Ould Mohand" , pseudo : "A . M" , subTitle1 : "Developpeur" , subTitle2 : "Front End" , presLeft : "Web" , presRight : "Mobile"  }
 
 class HomeSection extends Component {
+  
+
   render() {
     return (
       <div className="home-section-master">
@@ -51,10 +57,15 @@ class HomeSection extends Component {
                 </a>
               </div>
             </div>
+            <div className="big-logo-line">
+              {/* <LogoSVG/> */}
+              <LogoLineLine />
+            </div>
             <div className="big-logo">
               {/* <LogoSVG/> */}
               <LogoLine />
             </div>
+           
           </div>
         </div>
       </div>
