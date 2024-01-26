@@ -3,7 +3,6 @@ import "./../HomeSection/HomeSection.css";
 import Header from "../Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
-import LogoSVG from "../Logos/Logo.jsx";
 import LogoLine from "../Logos/LogoLine.jsx";
 import LogoLineLine from "../Logos/LogoLineLine.jsx";
 

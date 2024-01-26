@@ -34,7 +34,7 @@
 
 #line {
     stroke-dasharray: 1251;
-    animation: line-appear linear 2s forwards;
+    animation: line-appear linear forwards;
     animation-timeline: scroll();
 }
 
@@ -64,110 +64,4 @@
         visibility: visible;
     }
 
-}
-
-.card-group {
-    position: sticky;
-    top: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-@keyframes show-card1 {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-180%);
-    }
-
-    100% {
-        transform: translateX(-180%) rotateY(180deg);
-    }
-}
-
-@keyframes show-card2 {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-60%);
-    }
-
-    100% {
-        transform: translateX(-60%) rotateY(180deg);
-    }
-}
-
-@keyframes show-card3 {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(60%);
-    }
-
-    100% {
-        transform: translateX(60%) rotateY(180deg);
-    }
-}
-
-@keyframes show-card4 {
-    0% {
-        background-image: url('../../media/card-logo.png');
-        transform: translateX(0);
-    }
-
-    50% {
-        background-image: url('../../media/card-logo.png');
-        transform: translateX(180%);
-    }
-
-    74%{
-        background-image: url('../../media/card-logo.png');
-        transform: translateX(180%) rotateY(90deg);
-    }
-    75% {
-        background-image: none;
-        transform: translateX(180%) rotateY(90deg);
-    }
-
-    100% {
-        background-image: none;
-        transform: translateX(180%) rotateY(180deg);
-    }
-}
-
-
-
-.card-group>.card-master:nth-child(1) {
-    /* transform: translateX(-50%) translateY(5%) rotate(-7deg); */
-    background-image: url('../../media/card-logo.png');
-    animation: show-card1 linear forwards;
-    animation-timeline: scroll();
-}
-
-.card-group>.card-master:nth-child(2) {
-    background-image: url('../../media/card-logo.png');
-    animation: show-card2 linear forwards;
-    animation-timeline: scroll();
-}
-
-.card-group>.card-master:nth-child(3) {
-    background-image: url('../../media/card-logo.png');
-
-    animation: show-card3 linear forwards;
-    animation-timeline: scroll();
-}
-
-.card-group>.card-master:nth-child(4) {
-    background-image: url('../../media/card-logo.png');
-
-    animation: show-card4 linear forwards;
-    animation-timeline: scroll();
 }

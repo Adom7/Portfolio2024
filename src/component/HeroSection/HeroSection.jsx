@@ -11,7 +11,6 @@ import clay7 from "../../media/floating/Clay_Black0007.png";
 import clay8 from "../../media/floating/Clay_Black0008.png";
 import clay9 from "../../media/floating/Clay_Black0009.png";
 import clay10 from "../../media/floating/Clay_Black0010.png";
-import { LuSparkles } from "react-icons/lu";
 import { HiMiniSparkles } from "react-icons/hi2";
 
 
