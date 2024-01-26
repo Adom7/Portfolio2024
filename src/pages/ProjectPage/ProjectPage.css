@@ -1,3 +1,6 @@
+
+
+
 .project-page {
     background: linear-gradient(to bottom, var(--primary-color), purple);
     height: 300vh;
@@ -39,10 +42,12 @@
     0% {
         stroke-dashoffset: 1251
     }
+
     1% {
         stroke-dashoffset: 795;
     }
-    100%{
+
+    100% {
         stroke-dashoffset: 0;
     }
 
@@ -50,44 +55,119 @@
 
 @keyframes logo-appear {
     from {
-        stroke-dashoffset: 1251; visibility: visible;
+        stroke-dashoffset: 1251;
+        visibility: visible;
     }
 
     to {
-        stroke-dashoffset: 795; visibility: visible;
+        stroke-dashoffset: 795;
+        visibility: visible;
     }
 
 }
 
-.card-group{
+.card-group {
     position: sticky;
+    top: 50%;
     display: flex;
     flex-direction: row;
-    height: 400px;
-    width: 300px;
     justify-content: center;
     align-items: center;
 }
 
+@keyframes show-card1 {
+    0% {
+        transform: translateX(0);
+    }
 
+    50% {
+        transform: translateX(-180%);
+    }
 
-
-.card-group > .card-master:nth-child(1) {
-    transform: translateX(-10%) translateY(5%) rotate(-7deg);
-
+    100% {
+        transform: translateX(-180%) rotateY(180deg);
+    }
 }
-.card-group > .card-master:nth-child(2) {
-    transform: translateX(-5%)  translateY(3%) rotate(-2deg);
 
-  
+@keyframes show-card2 {
+    0% {
+        transform: translateX(0);
+    }
 
+    50% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(-60%) rotateY(180deg);
+    }
 }
-.card-group > .card-master:nth-child(3) {
-    transform: translateX(7%) translateY(3%) rotate(5deg);
 
+@keyframes show-card3 {
+    0% {
+        transform: translateX(0);
+    }
 
+    50% {
+        transform: translateX(60%);
+    }
+
+    100% {
+        transform: translateX(60%) rotateY(180deg);
+    }
 }
-.card-group > .card-master:nth-child(4) {
-    transform: translateX(35%) translateY(7%) rotate(10deg);
 
+@keyframes show-card4 {
+    0% {
+        background-image: url('../../media/card-logo.png');
+        transform: translateX(0);
+    }
+
+    50% {
+        background-image: url('../../media/card-logo.png');
+        transform: translateX(180%);
+    }
+
+    74%{
+        background-image: url('../../media/card-logo.png');
+        transform: translateX(180%) rotateY(90deg);
+    }
+    75% {
+        background-image: none;
+        transform: translateX(180%) rotateY(90deg);
+    }
+
+    100% {
+        background-image: none;
+        transform: translateX(180%) rotateY(180deg);
+    }
+}
+
+
+
+.card-group>.card-master:nth-child(1) {
+    /* transform: translateX(-50%) translateY(5%) rotate(-7deg); */
+    background-image: url('../../media/card-logo.png');
+    animation: show-card1 linear forwards;
+    animation-timeline: scroll();
+}
+
+.card-group>.card-master:nth-child(2) {
+    background-image: url('../../media/card-logo.png');
+    animation: show-card2 linear forwards;
+    animation-timeline: scroll();
+}
+
+.card-group>.card-master:nth-child(3) {
+    background-image: url('../../media/card-logo.png');
+
+    animation: show-card3 linear forwards;
+    animation-timeline: scroll();
+}
+
+.card-group>.card-master:nth-child(4) {
+    background-image: url('../../media/card-logo.png');
+
+    animation: show-card4 linear forwards;
+    animation-timeline: scroll();
 }

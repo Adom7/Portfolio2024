@@ -3,8 +3,11 @@
 .card-master {
     position: absolute;
     aspect-ratio: 5/7;
+    height: 457px;
+    width: 300px;
     background-color: whitesmoke;
     border-radius: 20px;
+    transition: transform 1s ease;
     /* animation: rotate-card linear forwards; */
     /* animation-timeline: scroll(); */
 }

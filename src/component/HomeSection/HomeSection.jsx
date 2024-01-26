@@ -7,10 +7,7 @@ import LogoSVG from "../Logos/Logo.jsx";
 import LogoLine from "../Logos/LogoLine.jsx";
 import LogoLineLine from "../Logos/LogoLineLine.jsx";
 
-import gsap from "gsap";
-
 import heroConfig from "../HeroSection/HeroConfig.json";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const homeSectionConfig = { name : "Adlane Ould Mohand" , pseudo : "A . M" , subTitle1 : "Developpeur" , subTitle2 : "Front End" , presLeft : "Web" , presRight : "Mobile"  }
 
