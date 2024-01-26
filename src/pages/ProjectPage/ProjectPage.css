@@ -60,15 +60,34 @@
 }
 
 .card-group{
+    position: sticky;
     display: flex;
     flex-direction: row;
-    position: sticky;
-    height: fit-content;
+    height: 400px;
+    width: 300px;
     justify-content: center;
     align-items: center;
 }
 
-.card-group:nth-child(1)>.card-master{
-    background-color: red;
-}
 
+
+
+.card-group > .card-master:nth-child(1) {
+    transform: translateX(-10%) translateY(5%) rotate(-7deg);
+
+}
+.card-group > .card-master:nth-child(2) {
+    transform: translateX(-5%)  translateY(3%) rotate(-2deg);
+
+  
+
+}
+.card-group > .card-master:nth-child(3) {
+    transform: translateX(7%) translateY(3%) rotate(5deg);
+
+
+}
+.card-group > .card-master:nth-child(4) {
+    transform: translateX(35%) translateY(7%) rotate(10deg);
+
+}

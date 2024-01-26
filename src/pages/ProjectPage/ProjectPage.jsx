@@ -4,6 +4,8 @@ import Logo from "../../component/Logos/Logo.jsx";
 import LogoLine from "../../component/Logos/LogoLine.jsx";
 import Card from "../../component/Card/Card.jsx";
 
+import cardLogo from "../../media/card-logo.png";
+
 class ProjectPage extends Component {
   render() {
     return (
