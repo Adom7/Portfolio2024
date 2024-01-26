@@ -17,6 +17,7 @@ body {
   color: var(--text-color);
   margin: 0;
   height: 100vh;
+  perspective: 400px;
 }
 
 html{

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Logo extends Component {
     render() {
         return (
-            <div>
                 <svg
             version="1.0"
             width="750"
@@ -37,7 +36,6 @@ class Logo extends Component {
               id="bar-logo"
             />
           </svg>
-            </div>
         );
     }
 }

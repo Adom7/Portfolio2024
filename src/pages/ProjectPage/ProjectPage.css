@@ -21,22 +21,6 @@
     color: var(--text-color-light);
 }
 
-#logo-svg {
-    stroke-dasharray: 4092;
-    animation: logo-appear 2s linear 2s forwards;
-    visibility: hidden;
-}
-
-#bar-logo{
-    animation: bar-logo 0.2s linear 4s forwards;
-    visibility: hidden;
-}
-
-  @keyframes bar-logo {
-    from { stroke-dashoffset: 18 ; visibility: visible; }
-    to {  stroke-dashoffset: 0 ;  visibility: visible;}
-  }
-
 
 #logo {
     stroke-dasharray: 1251;
@@ -74,3 +58,17 @@
     }
 
 }
+
+.card-group{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group:nth-child(1)>.card-master{
+    background-color: red;
+}
+

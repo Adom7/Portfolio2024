@@ -1,0 +1,19 @@
+
+
+.card-master {
+    aspect-ratio: 5/7;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    animation: rotate-card linear forwards;
+    animation-timeline: scroll();
+}
+
+.card-master img{
+    object-fit: fill;
+}
+
+@keyframes rotate-card {
+    from {transform: rotateY(0deg)}
+    to {transform: rotateY(180deg)}
+}
+
