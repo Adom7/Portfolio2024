@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import './HomePage.css'
-import HeroConfig from "../../component/HeroSection/HeroConfig.json";
-import HeroSection from "../../component/HeroSection/HeroSection.jsx";
-import HomeSection from "../../component/HomeSection/HomeSection.jsx";
+import React, { Component } from "react";
+import "./HomePage.css";
+import HeroConfig from "../../section/HeroSection/HeroConfig.json";
+import HeroSection from "../../section/HeroSection/HeroSection.jsx";
+import HomeSection from "../../section/HomeSection/HomeSection.jsx";
+import ScrollerSection from "../../section/ScollerSection/ScollerSection.jsx";
 
 class HomePage extends Component {
   render() {
@@ -11,7 +12,9 @@ class HomePage extends Component {
         <div className="Home">
           <HomeSection heroConfig={HeroConfig} />
         </div>
-
+        <div className="noise">
+          <ScrollerSection />
+        </div>
         <div className="heros">
           {HeroConfig.map((section, index) => (
             <div

@@ -6,9 +6,7 @@
 
 
 .heros{
-    /* background: linear-gradient( to bottom, var(--primary-color), purple); */
-    background: var(--primary-color);
-    /* background: var(--background-color); */
+    background: var(--text-color-dark);
 }
 
 .zigzag-border {

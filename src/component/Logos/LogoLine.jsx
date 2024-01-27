@@ -15,7 +15,7 @@ class LogoLine extends Component {
             <path              
               style={{
                 fill: 'none',
-                stroke: '#FFFFFF',
+                stroke: '#FFFCEC',
                 strokeWidth: '4.36042',
                 strokeLinecap: 'round',
                 strokeLinejoin: 'round',

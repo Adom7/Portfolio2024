@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./../HomeSection/HomeSection.css";
-import Header from "../Header/Header.jsx";
+import "./HomeSection.css";
+import Header from "../../component/Header/Header.jsx";
 import web from "../../media/AppleDevices/MacbookBlack.png";
 import mobile from "../../media/AppleDevices/iPhoneBlack.png";
-import LogoLine from "../Logos/LogoLine.jsx";
-import LogoLineLine from "../Logos/LogoLineLine.jsx";
+import LogoLine from "../../component/Logos/LogoLine.jsx";
+import LogoLineLine from "../../component/Logos/LogoLineLine.jsx";
 
 import heroConfig from "../HeroSection/HeroConfig.json";
 
@@ -53,12 +53,10 @@ class HomeSection extends Component {
                 </a>
               </div>
             </div>
-            <div className="big-logo-line">
-              {/* <LogoSVG/> */}
+            <div className="big-logo-line noise ">
               <LogoLineLine />
             </div>
-            <div className="big-logo">
-              {/* <LogoSVG/> */}
+            <div className="big-logo noise">
               <LogoLine />
             </div>
            
