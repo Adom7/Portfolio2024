@@ -4,11 +4,13 @@ import HeroConfig from "../../section/HeroSection/HeroConfig.json";
 import HeroSection from "../../section/HeroSection/HeroSection.jsx";
 import HomeSection from "../../section/HomeSection/HomeSection.jsx";
 import ScrollerSection from "../../section/ScollerSection/ScollerSection.jsx";
+import LoadingAnimation from "../../section/LoadingAnimation/LoadingAnimation.jsx";
 
 class HomePage extends Component {
   render() {
     return (
       <div>
+        <LoadingAnimation />
         <div className="Home">
           <HomeSection heroConfig={HeroConfig} />
         </div>
